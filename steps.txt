@@ -1,0 +1,35 @@
+1. create db on render
+
+2. install dj-database-url
+
+3. import dj_database_url in settings
+
+4. DATABASES["default] = dj_database_url.parse(external database url)
+
+5. run migrate
+
+6. if there is an error, we need to instal postgress driver: psycopg2-binary
+
+7. run migrate
+
+8. run server and see that no data is abailable
+
+9. create data from admin dashboard
+
+10. create new web service and connect github account
+
+11. create a github repository 
+
+12. Set up environment variables:
+    - pip install python-decouple
+
+    - in settings:
+        from decouple import config
+    
+    - create .env file in root directory
+
+    - move important secrets, remove the quotes and make sure they have no space between them
+
+    - create gitignore and add .env file
+
+13. connect to repo and push code to github
